@@ -14,7 +14,12 @@ html.no-js
     title
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+
     link(rel='stylesheet', href=asset('css/normalize.css'))
+
+    link(rel='stylesheet', href=asset('css/bootstrap.min.css'))
+    link(rel='stylesheet', href=asset('css/bootstrap-theme.min.css'))
+
     link(rel='stylesheet', href=asset('css/main.css'))
     script(src=asset('js/vendor/modernizr-2.6.2.min.js'))
   body
@@ -27,7 +32,11 @@ html.no-js
     //- Add your site or application content here
     block content
 
-    script(src="js/vendor/jquery-1.10.2.min.js")
+    script(src=asset("js/vendor/jquery-1.10.2.min.js"))
+    script(src=asset('js/vendor/bootstrap.min.js'))
+    script(src=asset('js/vendor/underscore-min.js'))
+    script(src=asset('js/vendor/backbone-min.js'))
+
     != getBlock('scripts').toHTML()
     script(src=asset('js/plugins.js'))
     script(src=asset('js/main.js'))
