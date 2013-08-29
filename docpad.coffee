@@ -9,8 +9,8 @@ docpadConfig = {
     plugins:
         assets:
             retainName: 'yes'
-
-
+        uglify:
+            all: true
 }
 
 # Export the DocPad Configuration
