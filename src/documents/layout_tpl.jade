@@ -33,9 +33,9 @@ html.no-js
     block content
 
     script(src=asset(bower_path('jquery')))
+    script(src=asset(bower_path('underscore')))
+    script(src=asset(bower_path('backbone')))
     script(src=asset('js/vendor/bootstrap.min.js'))
-    script(src=asset('js/vendor/underscore-min.js'))
-    script(src=asset('js/vendor/backbone-min.js'))
 
     != getBlock('scripts').toHTML()
     script(src=asset('js/plugins.js'))
