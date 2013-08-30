@@ -14,7 +14,7 @@ module.exports = (BasePlugin) ->
             templateData.bower_path = (name) ->
                 _this.js_files[name].path
             next()
-            
+
         generateAfter: =>
             for k, v of @js_files
                 fs.unlinkSync(v['dist'])

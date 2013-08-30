@@ -9,7 +9,8 @@
   "private": true,
   "dependencies" : {
     "jquery": "1.10",
-    "underscore": "1.5" 
+    "underscore": "1.5",
+    "jquery-ui" : "1.10.3"
   },
   "ignore": [
     "**/.*",
