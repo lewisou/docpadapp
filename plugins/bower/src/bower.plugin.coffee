@@ -15,13 +15,13 @@ module.exports = (BasePlugin) ->
         renderBefore: ({templateData}, next) ->
             _this = this;
             templateData.bower_path = (name) ->
-                _this.js_files[name].path
+                _this.js_files[name]?.path
             next()
 
         generateAfter: =>
             for k, v of @js_files
                 fs.unlinkSync(v['dist']) if fs.existsSync v['dist']
-            fs.rmdir @ab_base_dir
+            fs.rmdirSync @ab_base_dir
             @js_files = {}
 
         docpadReady: (docpad) =>
