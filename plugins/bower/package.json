@@ -1,0 +1,30 @@
+{
+    "name": "docpad-plugin-bower",
+    "version": "2.0.0",
+    "description": "DocPad plugin that adds the ability to get bower's js files ready to use in templates",
+    "homepage": "https://github.com/lewisou/docpad-plugin-bower",
+    "keywords": [
+        "docpad",
+        "docpad-plugin",
+        "bower"
+    ],
+    "author": "Copyright Lewis Z. <lewisou@gmail.com> (copyright http://blog.lewisou.com)",
+    "maintainers": [
+        "Lewis Z. <lewisou@gmail.com> (https://github.com/lewisou)"
+    ],
+    "contributors": [
+        "Lewis Z. <lewisou@gmail.com> (https://github.com/lewisou)"
+    ],
+    "bugs": {
+        "url": "https://github.com/lewisou/docpad-plugin-bower/issues"
+    },
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/lewisou/docpad-plugin-bower.git"
+    },
+    "engines" : {
+        "node": ">=0.8",
+        "docpad": ">=6"
+    },
+    "main": "./src/bower.plugin.coffee"
+}

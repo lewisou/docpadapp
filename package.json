@@ -14,7 +14,8 @@
     "bal-util": "*",
     "docpad-plugin-livereload": "~2.5.3",
     "docpad-plugin-stylus": "~2.4.0",
-    "docpad-plugin-uglify": "~2.2.0"
+    "docpad-plugin-uglify": "~2.2.0",
+    "bower" : "*"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
