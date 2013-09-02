@@ -21,7 +21,7 @@ module.exports = (BasePlugin) ->
         generateAfter: =>
             for k, v of @js_files
                 fs.unlinkSync(v['dist']) if fs.existsSync v['dist']
-            fs.rmdirSync @ab_base_dir
+            fs.rmdirSync @ab_base_dir if fs.existsSync @ab_base_dir
             @js_files = {}
 
         docpadReady: (docpad) =>
