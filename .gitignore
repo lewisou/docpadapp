@@ -1,5 +1,5 @@
 *~
-.bin/
-node_modules/
+/.bin/
+/node_modules/
 /out/
-bower_components/
+/bower_components/
